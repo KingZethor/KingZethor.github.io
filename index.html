@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
 	<link rel = "stylesheet" type ="text/css" href="KingZethor.github.io/balloonstyle.css">
 	<title>
 		Allen Comp Sci | Balloon Slideshow
@@ -39,6 +38,9 @@
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
 	<script type ="text/javascript">
+var slideIndex = 0;
+showSlides();
+
 function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -49,7 +51,7 @@ function showSlides() {
     if (slideIndex > slides.length) {slideIndex = 1} 
     slides[slideIndex-1].style.display = "block"; 
     setTimeout(showSlides, 2000); // Change image every 2 seconds
-}	
+}
 	</script>
 	</body>	
 		

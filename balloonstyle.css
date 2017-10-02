@@ -74,7 +74,7 @@
 }
 
 /* Fading animation */
-.fade {
+/*.fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1s;
   animation-name: fade;
@@ -90,3 +90,4 @@
   from {opacity: .6} 
   to {opacity: 1}
 }
+*/

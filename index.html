@@ -156,8 +156,26 @@ function sleep(ms) {
 function currentSlide(n) {
   slideIndex =n-1;
 current = true;
+showSlidesOnce();
 }
-
+		
+async function showSlidesOnce() {
+	
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+	for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+ dots[slideIndex-1].className += " active";
+}
+		
 async function showSlides() {
 	
     var i;
@@ -173,13 +191,11 @@ async function showSlides() {
     if (slideIndex > slides.length) {slideIndex = 1} 
     slides[slideIndex-1].style.display = "block"; 
  dots[slideIndex-1].className += " active";
-	if(!current){
-		await sleep(1900);
-	}
-	else{	current = false;}
-	
+	if(!current){await sleep(1900);}
+	else{
+		current = false;
+		await sleep(3900);}
 	setTimeout(showSlides, 100);
-
 }
 	</script>
 	</body>	

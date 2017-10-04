@@ -145,17 +145,11 @@
 </div>
 	<script type ="text/javascript">
 var slideIndex = 0;
-var plus = false;
-var current = false;
+
 showSlides();
 
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-		
-
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  slideIndex =n;
 }
 
 function showSlides() {

@@ -1,6 +1,6 @@
 body {
-    background-image: url("KingZethor.github.io/up.jpg");
-    background-color: #Fc2b3c;
+    background: url("KingZethor.github.io/up.jpg");
+    
 }
 
 * {box-sizing:border-box}

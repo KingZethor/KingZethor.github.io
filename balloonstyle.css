@@ -1,5 +1,7 @@
 body{
-background-size: 1900 1280;
+background-size: cover;
+background-repeat: no-repeat;
+  background-position: center center;
 }
 
 * {box-sizing:border-box}

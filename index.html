@@ -145,11 +145,16 @@
 </div>
 	<script type ="text/javascript">
 var slideIndex = 0;
-
+var current = false;
 showSlides();
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+		
 function currentSlide(n) {
   slideIndex =n;
+current = true;
 }
 
 function showSlides() {
@@ -166,6 +171,11 @@ function showSlides() {
     if (slideIndex > slides.length) {slideIndex = 1} 
     slides[slideIndex-1].style.display = "block"; 
  dots[slideIndex-1].className += " active";
+	
+	if(current){
+		await sleep(2000);
+		current = false;
+	}
     setTimeout(showSlides, 2000);
 }
 	</script>

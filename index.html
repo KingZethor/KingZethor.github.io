@@ -146,6 +146,7 @@
 	<script type ="text/javascript">
 var slideIndex = 0;
 var current = false;
+var lengthen = false;
 showSlides();
 
 function sleep(ms) {
@@ -158,11 +159,6 @@ current = true;
 }
 
 function showSlides() {
-	
-if(current){
-	await sleep(2000);
-	current = false;
-}
 	
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -177,7 +173,14 @@ if(current){
     if (slideIndex > slides.length) {slideIndex = 1} 
     slides[slideIndex-1].style.display = "block"; 
  dots[slideIndex-1].className += " active";
-	
+
+	if(lengthen)
+		await sleep(2000);
+}	
+if(current){
+	lengthen = true;
+	current = false;
+}
 	
     setTimeout(showSlides, 2000);
 }

@@ -158,6 +158,10 @@ current = true;
 }
 
 function showSlides() {
+	if(current){
+		await sleep(2000);
+		current = false;
+	}
     var i;
     var slides = document.getElementsByClassName("mySlides");
 	  var dots = document.getElementsByClassName("dot");
@@ -172,10 +176,7 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block"; 
  dots[slideIndex-1].className += " active";
 	
-	if(current){
-		await sleep(2000);
-		current = false;
-	}
+	
     setTimeout(showSlides, 2000);
 }
 	</script>

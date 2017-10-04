@@ -174,19 +174,15 @@ async function showSlides() {
     slides[slideIndex-1].style.display = "block"; 
  dots[slideIndex-1].className += " active";
 
-if(lengthen)
+if(lengthen){
 		await sleep(2000);
-	setTimeout(showSlides, 2000);
 }	
-elseif(current){
+if(current){
 	lengthen = true;
 	current = false;
-	setTimeout(showSlides, 2000);
 }
-	
-else{
 	setTimeout(showSlides, 2000);
-}
+
 }
 	</script>
 	</body>	

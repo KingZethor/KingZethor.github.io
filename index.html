@@ -176,6 +176,8 @@ async function showSlides() {
 	if(!current){
 		await sleep(1900);
 	}
+	else{	current = false;}
+	
 	setTimeout(showSlides, 100);
 
 }

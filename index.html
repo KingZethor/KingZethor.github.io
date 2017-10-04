@@ -147,7 +147,18 @@
 </div>
 	<script type ="text/javascript">
 var slideIndex = 0;
+var forward = false;
+var back = false;
 showSlides();
+
+function currentSlide(n){
+	slideIndex = n;
+}
+		
+function plusSlide(n){
+	if(n > 0){forward = true; }
+	else {back = true; }
+}
 
 function showSlides() {
     var i;
@@ -163,6 +174,14 @@ function showSlides() {
     if (slideIndex > slides.length) {slideIndex = 1} 
     slides[slideIndex-1].style.display = "block"; 
  dots[slideIndex-1].className += " active";
+	if(forward){
+		forward = false;
+		slideIndex++;
+	}
+	else if(back){
+	back = false;
+	slideIndex--;
+	}
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 	</script>

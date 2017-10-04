@@ -158,10 +158,11 @@ current = true;
 }
 
 function showSlides() {
-	if(current){
-		await sleep(2000);
-		current = false;
-	}
+if(current){
+	await sleep(2000);
+	current = false;
+}
+	
     var i;
     var slides = document.getElementsByClassName("mySlides");
 	  var dots = document.getElementsByClassName("dot");

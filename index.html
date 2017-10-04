@@ -175,12 +175,13 @@ async function showSlides() {
  dots[slideIndex-1].className += " active";
 
 if(lengthen){
-		await sleep(2000);
+		
 	lengthen = false;
 }	
 if(current){
 	lengthen = true;
 	current = false;
+	await sleep(2000);
 }
 	setTimeout(showSlides, 2000);
 

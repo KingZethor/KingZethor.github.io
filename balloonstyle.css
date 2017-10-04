@@ -1,4 +1,7 @@
 * {box-sizing:border-box}
+body {
+    background-image: url("KingZethor.github.io/up.jpg");
+}
 
 /* Slideshow container */
 .slideshow-container {

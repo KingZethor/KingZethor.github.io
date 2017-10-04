@@ -148,22 +148,11 @@
 	<script type ="text/javascript">
 var slideIndex = 0;
 showSlides();
-		
-function plusSlides(n) {
-  showSlides(;
-}
 
-function currentSlide(n) {
-  showSlides();
-}
-		
 function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
-	var dots = document.getElementsByClassName("dot");
-	 if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-   for (i = 0; i < slides.length; i++) {
+     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; 
   }
   for (i = 0; i < dots.length; i++) {
@@ -171,7 +160,10 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
-    setTimeout(showSlides(), 4000); // Change image every 2 seconds
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 	</script>
 	</body>	

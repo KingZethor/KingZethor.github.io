@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "stylesheet" type ="text/css" href="balloonstyle.css">
+	<title>
+		Allen Comp Sci | Balloon Slideshow
+		</title>
+</head>
+
+<body background = ye-old-floating-house.jpeg>
+	<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 21</div>
+    <img src="Good Pictures/image06-27-17--185830.jpg" style="width:100%">
+	</div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 21</div>
+    <img src="Good Pictures/image06-27-17--190139.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 21</div>
+    <img src="Good Pictures/image06-27-17--190242.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 21</div>
+    <img src="Good Pictures/image06-27-17--190334.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 21</div>
+    <img src="Good Pictures/image06-27-17--190530.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 21</div>
+    <img src="Good Pictures/image06-27-17--190643.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 21</div>
+    <img src="Good Pictures/image06-27-17--190757.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 21</div>
+    <img src="Good Pictures/image06-27-17--191446.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 21</div>
+    <img src="Good Pictures/image06-27-17--191621.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">10 / 21</div>
+    <img src="Good Pictures/image06-27-17--192115.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">11 / 21</div>
+    <img src="Good Pictures/image06-27-17--192300.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">12 / 21</div>
+    <img src="Good Pictures/image06-27-17--194514.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">13 / 21</div>
+    <img src="Good Pictures/image06-27-17--194627.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">14 / 21</div>
+    <img src="Good Pictures/image06-27-17--194947.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">15 / 21</div>
+    <img src="Good Pictures/image06-27-17--195657.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">16 / 21</div>
+    <img src="Good Pictures/image06-27-17--195739.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">17 / 21</div>
+    <img src="Good Pictures/image06-27-17--195800.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">18 / 21</div>
+    <img src="Good Pictures/image06-27-17--200202.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">19 / 21</div>
+    <img src="Good Pictures/image06-27-17--201057.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">20 / 21</div>
+    <img src="Good Pictures/image06-27-17--202128.jpg" style="width:100%">
+  </div>
+		
+  <div class="mySlides fade">
+    <div class="numbertext">21 / 21</div>
+    <img src="Good Pictures/image06-27-17--202601.jpg" style="width:100%">
+  </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+ 	<span class="dot" onclick="currentSlide(1)"></span> 
+ 	<span class="dot" onclick="currentSlide(2)"></span> 
+ 	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
+	<span class="dot" onclick="currentSlide(6)"></span>
+	<span class="dot" onclick="currentSlide(7)"></span>
+	<span class="dot" onclick="currentSlide(8)"></span>
+	<span class="dot" onclick="currentSlide(9)"></span>
+	<span class="dot" onclick="currentSlide(10)"></span>
+	<span class="dot" onclick="currentSlide(11)"></span>
+	<span class="dot" onclick="currentSlide(12)"></span>
+	<span class="dot" onclick="currentSlide(13)"></span>
+	<span class="dot" onclick="currentSlide(14)"></span>
+	<span class="dot" onclick="currentSlide(15)"></span>
+	<span class="dot" onclick="currentSlide(16)"></span>
+	<span class="dot" onclick="currentSlide(17)"></span>
+	<span class="dot" onclick="currentSlide(18)"></span>
+	<span class="dot" onclick="currentSlide(19)"></span>
+	<span class="dot" onclick="currentSlide(20)"></span>
+	<span class="dot" onclick="currentSlide(21)"></span>
+
+	
+	
+</div>
+	<script type ="text/javascript">
+var slideIndex = 0;
+showSlides();
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+		
+function currentSlide(n) {
+  slideIndex =n-1;
+}
+		
+		
+async function showSlides() {
+	
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+	for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+ dots[slideIndex-1].className += " active";
+	await sleep(1900);
+	setTimeout(showSlides, 100);
+}
+	</script>
+	</body>	
+		
+</html>
